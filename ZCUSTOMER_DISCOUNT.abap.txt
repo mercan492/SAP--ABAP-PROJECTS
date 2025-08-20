@@ -1,0 +1,24 @@
+*&---------------------------------------------------------------------*
+*& Report ZCUSTOMER_DISCOUNT
+*Autor:Mercan KÖSEOĞLU DATE:20.08.2025
+*&
+*&---------------------------------------------------------------------*
+REPORT ZCUSTOMER_DISCOUNT NO STANDARD PAGE HEADING.
+PARAMETERS :p_name TYPE string OBLIGATORY,
+            p_amount TYPE p DECIMALS 2 OBLIGATORY.
+ DATA : lv_discount TYPE P DECIMALS 2,
+        lv_final_amount TYPE p DECIMALS 2.
+" Koşul ile indirim belirleme
+
+IF p_amount <= 1000.
+   lv_discount = 0.
+ELSEIF p_amount <= 5000.
+   lv_discount = p_amount * 5 / 100.
+ELSE.
+   lv_discount = p_amount * 10 / 100.
+ENDIF.
+   lv_final_amount = p_amount - lv_discount.
+write:/ 'Müşteri Adı :', p_name,
+      / 'Alışveriş Tutarı:', p_amount,
+      / 'İndirim :', lv_discount,
+      / 'Toplam Ödenecek :',lv_final_amount.
