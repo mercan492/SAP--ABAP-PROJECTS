@@ -40,5 +40,9 @@ Alışveriş Tutarı : 6.000,00
 İndirim : 600,00
 Toplam Ödenecek : 5.400,00
 
-Geliştiren: Mercan Köseoğlu
+Geliştiren: Mercan Köseoğlu 20.08.2025
 Data Analyst & SAP ABAP Consultant
+![Z_customer_discount_2](https://github.com/user-attachments/assets/28aa6a40-0d31-4fb2-8bb8-c1e985e497fc)
+![Z_customer_discount_3](https://github.com/user-attachments/assets/9f37f6cb-df2b-415e-8a8d-ecbad8961e0e)
+
+
